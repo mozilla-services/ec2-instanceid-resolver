@@ -37,7 +37,7 @@ module.exports = function(ACCESS_KEY, SECRET_KEY, moduleCB) {
                         var instances = {};
 
                         if (err) {
-                            return cb(err);
+                            return topCB(err);
                         }
 
                         if (data.Reservations.length > 0) {
